@@ -311,7 +311,18 @@ h1 {
     border-radius: 50%;
     position: absolute;
     transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions for opacity and transform */
-  }
+   -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: auto;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+}
 
   .circle-text,
   .text-only {
