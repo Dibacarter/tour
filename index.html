@@ -44,7 +44,7 @@
         /* Custom font styling */
         #customAlert p {
 font-family: 'BB Manual Mono Pro TX';
-            font-size: 11px;
+            font-size: 18px;
             margin: 0;
         }
 
@@ -66,20 +66,22 @@ font-family: 'BB Manual Mono Pro TX';
 
     <div id="customAlert">
         <p>THIS PAGE IS EXPERIENCING SOME PROBLEMS. ALL WILL BE RESOLVED SOON. THANK YOU!</p>
-        <button style="font-family: 'BB Manual Mono Pro TX';background-color:transparent;color:#c63528;margin-top:8px;" onclick="closeAlert()">OK</button>
+        <button style="font-family: 'BB Manual Mono Pro TX';background-color:transparent;color:#c63528;margin-top:14px;" onclick="closeAlert()">OK</button>
     </div>
 
-    <script>
+ <script>
         // Function to show the custom alert
         function showAlert() {
             document.getElementById('customAlert').style.display = 'block';
             document.getElementById('alertOverlay').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
         }
 
         // Function to close the custom alert
         function closeAlert() {
             document.getElementById('customAlert').style.display = 'none';
             document.getElementById('alertOverlay').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
         }
 
         // Show the custom alert when the page loads
