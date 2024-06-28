@@ -383,6 +383,26 @@ h1 {
   margin: 17px; /* Add equal spacing between circles */
   font-weight: 500;
 }
+
+.circle-t {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  border: 3px solid gray; /* Default border color */
+  background-color: black;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+    font-family: 'BB Manual Mono Pro TX';
+  margin: 17px; /* Add equal spacing between circles */
+  font-weight: 500;
+}
+
   @media screen and (max-width: 795px) {
     .circle {
       width: 329px; /* Adjust width for larger screens */
@@ -438,7 +458,6 @@ h1 {
   }
 
   .text-only {
-      border: 3px solid gray; /* Default border color */
     display: block; /* Always show text for text-only circles */
     color: gray; /* Default text color for text-only circles */
   }
@@ -452,7 +471,8 @@ h1 {
   }
 
   .circle:hover,
-  .circle.touched {
+  .circle.touched, .circle-t:hover,
+  .circle-t.touched {
     border: 3px solid white; /* Border color on hover/touch */
   }
 
@@ -465,14 +485,14 @@ h1 {
 
 <div class="container">
   <a href="https://tour.khaliiil.com/terms-for-tours" class="circle-link">
-    <div class="circle">
+    <div class="circle-t">
       <div class="text-only">TERMS & CONDITIONS<br><h4 style="font-weight:400;">RULES</h4></div>
     </div>
   </a>
 
 <div class="container">
   <a href="https://tour.khaliiil.com/2024/eilat" class="circle-link">
-    <div class="circle">
+    <div class="circle-t">
       <div class="text-only">EILAT</div>
     </div>
   </a>
@@ -501,19 +521,32 @@ h1 {
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var circles = document.querySelectorAll('.circle');
+    var circlest = document.querySelectorAll('.circle-t');
 
     circles.forEach(function(circle) {
-      circle.addEventListener('touchstart', function() {
-        // Apply 'touched' class
-        this.classList.add('touched');
-      });
+        circle.addEventListener('touchstart', function() {
+            // Apply 'touched' class
+            this.classList.add('touched');
+        });
 
-      circle.addEventListener('touchend', function() {
-        // Remove 'touched' class
-        this.classList.remove('touched');
+        circle.addEventListener('touchend', function() {
+            // Remove 'touched' class
+            this.classList.remove('touched');
         });
     });
-  });
+
+    circlest.forEach(function(circleT) {
+        circleT.addEventListener('touchstart', function() {
+            // Apply 'touched' class
+            this.classList.add('touched');
+        });
+
+        circleT.addEventListener('touchend', function() {
+            // Remove 'touched' class
+            this.classList.remove('touched');
+        });
+    });
+});
 </script>
 
 </body>
