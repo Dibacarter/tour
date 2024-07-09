@@ -307,7 +307,7 @@ margin-bottom: 2px;
 
 .right-title {
     right: 0;
-    padding-right:60px; /* Adjust as needed */
+    padding-right: 60px; /* Adjust as needed */
 }
 
 .title-container.hidden {
@@ -325,25 +325,36 @@ h1 {
     font-weight: normal; /* Set font weight to normal */
     margin: 0; /* Remove default margin */
 }
-  @media screen and (min-width: 601px) {
-.left-title {
-    left: 0;
-    padding-left: 80px; /* Adjust as needed */
+
+.new-text {
+    padding-left: 60px; /* Adjust to match the left-title padding */
+    margin-bottom: 10px; /* Adjust as needed to create space between new text and left title */
 }
 
-.right-title {
-    right: 0;
-    padding-right:80px; /* Adjust as needed */
-}
+@media screen and (min-width: 601px) {
+    .left-title {
+        padding-left: 80px; /* Adjust as needed */
+    }
+
+    .new-text {
+        padding-left: 80px; /* Adjust to match the left-title padding */
+    }
+
+    .right-title {
+        padding-right: 80px; /* Adjust as needed */
+    }
 }
 </style>
 
 <div class="title-container left-title">
-    <span>2023-2024</span>
+    <div class="left-title-content">
+        <div class="new-text">P i</div>
+        <span>2023-2024</span>
+    </div>
 </div>
 
 <div class="title-container right-title">
-   <span>WORLD WIDE</span>
+    <span>WORLD WIDE</span>
 </div>
 
 <style>
