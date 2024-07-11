@@ -408,6 +408,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+color:white
   font-size: 20px;
     font-family: 'BB Manual Mono Pro TX';
   margin: 17px; /* Add equal spacing between circles */
@@ -454,7 +455,6 @@ h1 {
   .circle-text {
     border:none;
     color:white;
-    z-index:1000000;
 }
 
   .circle img {
@@ -510,6 +510,7 @@ h1 {
 
   .circle:hover img,
   .circle.touched img {
+    opacity: 0.5; /* Reduce opacity of image on hover/touch */
     transform: scale(0.99); /* Reduce size of image on hover/touch */
   }
 </style>
