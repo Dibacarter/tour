@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khalil</title>
-  <style>
-@font-face {
-  font-family: 'BB Manual Mono Pro TX';
-  src: url('https://www.khaliiil.com/BBManualMonoProTX-Regular.woff2') format('woff2');
-  /* Additional font properties (e.g., font-weight, font-style) can be specified here */
-}
-body {
-    font-family: 'BB Manual Mono Pro TX';
-}
-</style>
-
-    <meta charset="UTF-8">
-      <meta name="description" content="The Official Website of Khalil">
-    <meta property="og:description" content="The Official Website of Khalil">
-    <meta property="og:image" content="https://tour.khaliiil.com/mediaOf/actii-img.jpg">
-    <meta property="og:url" content="https://tour.khaliiil.com">
-    <meta property="og:site_name" content="Khaliil">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:author" content="Khalil">
-    <link rel="icon" href="https://www.khaliiil.com/mediaOf/actii-icon.jpg">
-      
-      <link rel="icon" href="https://www.khaliiil.com/mediaOf/actii-icon.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khalil</title>
+<style>@font-face {font-family: 'BB Manual Mono Pro TX';src: url('https://www.khaliiil.com/BBManualMonoProTX-Regular.woff2') format('woff2');}body {font-family: 'BB Manual Mono Pro TX';}</style>
+<meta charset="UTF-8">
+<meta name="description" content="The Official Website of Khalil">
+<meta property="og:description" content="The Official Website of Khalil">
+<meta property="og:image" content="https://www.khaliiil.com/mediaOf/actii-img.jpg">
+<meta property="og:url" content="https://tour.khaliiil.com">
+<meta property="og:site_name" content="Khaliil">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:author" content="Khalil">
+<link rel="icon" href="https://www.khaliiil.com/mediaOf/actii-icon.jpg">
+<link rel="icon" href="https://www.khaliiil.com/mediaOf/actii-icon.jpg">
 <meta name="URL" content="http://tour.khaliiil.com">
 <meta name="twitter:title" content="Khalil">
 <meta name="twitter:description" content="The Official Website of Khalil">
@@ -35,33 +24,31 @@ body {
 <meta property="og:site_name" content="Khalil">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tour.khaliiil.com/">
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="copyright" content="2024">
-
 <style>
+
 .title-container {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2000; /* ensure it's on top of other content */
-        font-family: 'BB Manual Mono Pro TX';
-
 }
 
 .left-title, .right-title {
-    font-size: 20px;
+  text-transform:uppercase;
+    font-size: 21px;
     color: white;
-    letter-spacing:2px;
 }
 
 .left-title {
     left: 0;
-    margin-left: 70px; /* Adjust as needed */
+    padding-left: 60px; /* Adjust as needed */
 }
 
 .right-title {
     right: 0;
-    margin-right: 70px; /* Adjust as needed */
+    padding-right: 60px; /* Adjust as needed */
 }
 
 .title-container.hidden {
@@ -79,19 +66,138 @@ h1 {
     font-weight: normal; /* Set font weight to normal */
     margin: 0; /* Remove default margin */
 }
-@media screen and (max-width: 400px) {
-.left-title {
-    padding-left: 50px; /* Adjust as needed */
+
+.new-text {
+    position: absolute;
+    top: -1em; /* Adjust as needed to position above the left title */
+    left: 60px; /* Match the padding of the left title */
+    font-size: 18px; /* Adjust font size as needed */
 }
 
-.right-title {
-    padding-right: 50px; /* Adjust as needed */
+@media screen and (min-width: 601px) {
+    .left-title {
+        padding-left: 80px; /* Adjust as needed */
+    }
+
+    .new-text {
+        left: 80px; /* Match the padding of the left title */
+    }
+
+    .right-title {
+        padding-right: 80px; /* Adjust as needed */
+    }
 }
-}
-</style>
 
 
-  <style>
+nav.top-nav {
+    margin-top: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    background-color: none;
+    color:white;
+}
+
+nav.bottom-nav {
+    margin-bottom: 18px;
+    position: fixed;
+    bottom: 13px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color:white;
+}
+
+.nav-items div {
+    margin: 0 10px; /* Adjust this margin to control the space between buttons */
+}
+
+.nav-items div a {
+    font-family: 'BB Manual Mono Pro TX';
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+}
+
+@media screen and (max-width: 200px) {
+    .nav-items div a {
+        font-size: 17px;
+        margin: 0.9px;
+    }
+}
+
+@media screen and (max-width: 300px) and (min-width: 201px) {
+    .nav-items div a {
+        font-size: 18px;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 301px) {
+    .nav-items div a {
+        font-size: 20.0px;
+        margin: 2.20px;
+    }
+}
+
+@media screen and (max-width: 550px) and (min-width: 451px) {
+    .nav-items div a {
+        font-size: 21px;
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 660px) and (min-width: 551px) {
+    .nav-items div a {
+        font-size: 21px;
+        margin: 19.99px;
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 661px) {
+    .nav-items div a {
+        font-size: 22px;
+        margin: 27px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 781px) {
+    .nav-items div a {
+        font-size: 22px;
+        margin: 28.8px;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 901px) {
+    .nav-items div a {
+        font-size: 22px;
+        margin: 290.99px;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .nav-items div a {
+        font-size: 23.0px;
+        margin: 39px;
+    }
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -103,11 +209,11 @@ html, body {
 
 .media-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  position: fixed;
+  position: absolute;
   z-index: 1;
 }
 
@@ -119,7 +225,17 @@ html, body {
   user-select: none;
   pointer-events: auto;
   user-drag: none;
-  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: auto;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
 }
 
 .media video {
@@ -132,7 +248,8 @@ html, body {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  width: 25px;
+  margin:5px;
+  width: 19px;
   height: auto;
   cursor: pointer;
   z-index: 10;
@@ -159,10 +276,30 @@ html, body {
   align-items: center;
   z-index: 9999;
   touch-action: pan-x pan-y;
+  webkit-touch-callout: none; -webkit-user-select: text;
+  overflow:none;
+  -webkit-touch-callout: none !important;
+    -webkit-touch-callout: none !important;
+  overflow: hidden; /* Prevents overflow */
+  -webkit-touch-callout: none; /* Disables the callout on long taps */
+  user-select: none; /* Prevents text selection */
+  touch-action: none; /* Disables touch actions */
+  overscroll-behavior: none; /* Prevents overscroll behavior */
 }
 
 body.no-scroll {
   overflow: hidden;
+  overflow-y:none;
+  overflow:none;
+  overflow-y:hidden;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  -webkit-touch-callout: none !important;
+  overflow: hidden; /* Prevents overflow */
+  -webkit-touch-callout: none; /* Disables the callout on long taps */
+  user-select: none; /* Prevents text selection */
+  touch-action: none; /* Disables touch actions */
+  overscroll-behavior: none; /* Prevents overscroll behavior */
 }
 @media screen and (min-width: 610px) {
 #overlay-content {
@@ -174,7 +311,7 @@ body.no-scroll {
   width: 100%;
   height: 100%;
   overflow: auto;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
   position: fixed;
   touch-action: pan-x pan-y;
 }
@@ -206,7 +343,7 @@ body.no-scroll {
 
 #prev-btn {
   left: 65px;
-  border: 3px solid #275c86;
+  border: 3px solid rgba(39, 92, 134, 0.65);
   top: 50px;
 }
 
@@ -224,157 +361,12 @@ body.no-scroll {
   pointer-events: auto;
   user-drag: none;
   -webkit-touch-callout: none;
-}  </style>
+}  
+  
+</style>
 
 
 <style>
-nav.top-nav {
-    margin-top: 14px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1000;
-}
-
-nav.bottom-nav {
-    margin-bottom: 9px;
-    position: fixed;
-    bottom: 13px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-nav.top-nav ul, nav.bottom-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav.top-nav ul li, nav.bottom-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav.top-nav ul li a {
-            font-family: 'BB Manual Mono Pro TX';
-    font-size: 19px;
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-}
-
-nav.bottom-nav ul li a {
-            font-family: 'BB Manual Mono Pro TX';
-    font-size: 11px;
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    nav.bottom-nav ul li a {
-        font-size: 15px;
-        padding: 12px;
-        align-items: center;
-    }
-
-    nav.top-nav ul li a {
-        padding: 2px;
-        font-size: 19px;
-    }
-
-    .middle-text {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 601px) {
-    nav.bottom-nav ul li a {
-        font-size: 12px;
-        padding: 1px;
-        align-items: right;
-
-    }
-    nav.top-nav ul li a {
-        font-size: 22px;
-    }
-nav.top-nav {
-    position: fixed; /* Keep the top navigation bar fixed */
-    top: 0; /* Position it at the top */
-    left: 0; /* Position it at the left */
-    width: 100%; /* Take up the full width of the viewport */
-    display: flex; /* Use flexbox layout */
-    justify-content: space-around; /* Space items evenly with more space between them */
-    align-items: center; /* Center-align the items vertically */
-    z-index: 1000; /* Ensure it's above other content */
-  }
-
-  /* Style for the bottom navigation bar */
-  nav.bottom-nav {
-    position: fixed; /* Keep the bottom navigation bar fixed */
-    bottom: 0; /* Position it at the bottom */
-    left: 0; /* Position it at the left */
-    width: 100%; /* Take up the full width of the viewport */
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Center-align the items vertically */
-    z-index: 1000; /* Ensure it's above other content */
-    height: 50px; /* Add the desired height */
-  }
-
-  nav.top-nav ul,
-  nav.bottom-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav.top-nav ul li,
-  nav.bottom-nav ul li {
-    display: inline;
-    margin: 0 10px; /* Add margin to create space between buttons */
-  }
-
-  nav.bottom-nav ul li:first-child {
-    margin-left: 30px;
-  }
-      nav.bottom-nav ul li:last-child {
-    margin-right: 30px;
-  }
-
-  nav.top-nav ul li a {
-            font-family: 'BB Manual Mono Pro TX';
-    color: white; /* Change font color to white */
-    text-decoration: none;
-
-  }
-
-  nav.bottom-nav ul li a {
-            font-family: 'BB Manual Mono Pro TX';
-    color: white; /* Change font color to white */
-    text-decoration: none;
-  }
-
-.middle-text {
-            font-family: 'BB Manual Mono Pro TX';
-  font-size: 12px; /* Set font size */
-  color: white; /* Change font color to white */
-  margin-left: 100px;
-margin-bottom: 2px;
-}
-} 
-
-
-
-
 /* For WebKit-based browsers (Chrome, Safari, iOS Safari, and most Android browsers) */
 video::-webkit-media-controls,
 video::-webkit-media-controls-start-playback-button,
@@ -462,9 +454,7 @@ video::-ms-media-controls-timeline-container {
   display: none !important;
 }
 
-
-
-
+/* styles.css */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -493,6 +483,7 @@ video {
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Ensures the loader is on top */
+
 }
 
 .loader {
@@ -515,33 +506,42 @@ video {
 
 </head>
 <body bgcolor="black">
+  
+<nav class="top-nav">
+    <div class="nav-items">
+        <div><a href="https://www.khaliiil.com">HOME</a></div>
+        <div><a href="https://www.khaliiil.com">SHOP</a></div>
+        <div><a href="https://music.khaliiil.com">MUSIC</a></div>
+        <div><a href="https://tour.khaliiil.com">TOUR</a></div>
+        <div><a href="https://www.khaliiil.com/blog">BLOG</a></div>
+    </div>
+</nav>
 
 <div class="media-container">
 
-
   
-  <div class="title-container left-title">
-    <span>2023-24</span>
+<div class="title-container left-title">
+    <div class="new-text"></div>
+    <span>2.</span>
 </div>
 
 <div class="title-container right-title">
-   <span>WORLD WIDE</span>
+    <span>germany</span>
 </div>
-
-<nav class="top-nav">
-    <ul>
-        <li><a href="https://www.khaliiil.com">HOME</a></li>
-        <li><a href="https://www.khaliiil.com">SHOP</a></li>
-        <li><a href="https://music.khaliiil.com/">MUSIC</a></li>
-        <li><a href="https://tour.khaliiil.com/">TOUR</a></li>
-        <li><a href="https://www.khaliiil.com/blog">BLOG</a></li>
-    </ul>
-</nav>
-
-
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/GMP_Q29tcHJlc3NHSDAx_7.gif" alt="Media-9">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/IMG_6594.jpeg" alt="Media-8">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/IMG_6567.jpeg" alt="Media-7">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/IMG_6593.jpeg" alt="Media-6">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/IMG_6557.jpeg" alt="Media-5">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/IMG_6544.jpeg" alt="Media-4">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/GMP_U2F2ZUdNQVgwMQ==.gif" alt="Media-3">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/IMG_6536.jpeg" alt="Media-2">
+<img class="media" src="https://github.com/Dibacarter/tour/raw/main/ger-imgs/IMG_6517.jpeg" alt="Media-1">
+  
+  
 <div>
 <div class="css-nkyjj6" id="desktop-footer">
-<a href="https://www.khaliiil.com/">
+<a href="https://www.khaliiil.com/join-club">
 <p class="chakra-text css-1p6wh2o">
 JOIN
 </p>
@@ -550,15 +550,15 @@ JOIN
 © 2024 KHALIL
 </p>
 <div class="css-n4rzf0">
-<a href="https://khaliiil.com/beenstately">
+<a href="https://www.khaliiil.com/credits">
 <p class="chakra-text css-wfwtac">
-BEEN STATELY
+CREDITS
 </p>
-</a><a href="https://help.khaliiil.com/terms-conditions">
+</a><a href="https://khaliiil.com/terms-conditions">
 <p class="chakra-text css-wfwtac">
 TERMS
 </p>
-</a><a href="https://help.khaliiil.com/privacy-policy">
+</a><a href="https://khaliiil.com/privacy-policy">
 <p class="chakra-text css-1p6wh2o">
 PRIVACY
 </p>
@@ -566,19 +566,19 @@ PRIVACY
 </div>
 </div>
 <div id="mobile-footer" class="footer_mobile-footer__ZUP4j css-1ozbijy">
-<a href="https://www.khaliiil.com//">
+<a href="https://www.khaliiil.com/join-club">
 <p class="chakra-text css-gf4rj5">
 JOIN
 </p>
-</a><a href="https://khaliiil.com/beenstately">
+</a><a href="https://khaliiil.com/credits">
 <p class="chakra-text css-gf4rj5">
-BEEN STATELY
+CREDITS
 </p>
-</a><a href="https://help.khaliiil.com/terms-conditions">
+</a><a href="https://khaliiil.com/terms-conditions">
 <p class="chakra-text css-gf4rj5">
 TERMS
 </p>
-</a><a href="https://help.khaliiil.com/privacy-policy">
+</a><a href="https://khaliiil.com/privacy-policy">
 <p class="chakra-text css-gf4rj5">
 PRIVACY
 </p>
@@ -589,7 +589,9 @@ PRIVACY
 <span id="__chakra_env" hidden=""></span>
 </div>
 
+
 </div>
+
 
 <div id="overlay">
   <span id="prev-btn" class="nav-btn">
@@ -603,20 +605,17 @@ PRIVACY
 </div>
 
 <script>
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
     const video = document.getElementById("myVideo");
     const loaderWrapper = document.getElementById("loader-wrapper");
 
     function showLoader() {
-        if (!video.paused && !video.ended) {
-            loaderWrapper.style.display = "none";
-        } else {
-            loaderWrapper.style.display = "flex";
-        }
+        // Show loader when video is buffering, seeking, or stalled
+        loaderWrapper.style.display = "flex";
     }
 
     function hideLoader() {
+        // Hide loader when video is playing
         loaderWrapper.style.display = "none";
     }
 
@@ -630,152 +629,164 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initially show loader until the video starts playing
     showLoader();
+
+    // Hide loader if the video is already playing (for cases like autoplay)
+    if (!video.paused && !video.ended) {
+        hideLoader();
+    }
 });
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const mediaElements = document.querySelectorAll('.media');
-    const overlay = document.getElementById('overlay');
-    const overlayContent = document.getElementById('overlay-content');
-    const closeBtn = document.getElementById('close-btn');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
+document.addEventListener('DOMContentLoaded', function() {
+  const mediaElements = document.querySelectorAll('.media');
+  const overlay = document.getElementById('overlay');
+  const overlayContent = document.getElementById('overlay-content');
+  const closeBtn = document.getElementById('close-btn');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
 
-    let currentIndex = 0;
-    let currentOverlayVideo = null;
+  let currentIndex = 0;
+  let currentOverlayVideo = null;
 
-    function disableScroll() {
-      document.body.classList.add('no-scroll');
-    }
+  function disableScroll() {
+    document.body.classList.add('no-scroll');
+  }
 
-    function enableScroll() {
-      document.body.classList.remove('no-scroll');
-    }
+  function enableScroll() {
+    document.body.classList.remove('no-scroll');
+  }
 
-    function muteAllVideos() {
-      mediaElements.forEach(media => {
-        if (media.querySelector('video')) {
-          const video = media.querySelector('video');
-          video.muted = true;
-          const soundOffIcon = media.querySelector('.sound-off-icon');
-          const soundOnIcon = media.querySelector('.sound-on-icon');
-          soundOffIcon.style.display = 'block';
-          soundOnIcon.style.display = 'none';
-          video.play();  // Ensure video keeps playing
-        }
+  function playVideoWhenReady(video) {
+    video.addEventListener('canplay', () => {
+      video.play();
+    });
+  }
+
+  function muteAllVideos() {
+    mediaElements.forEach(media => {
+      const video = media.querySelector('video');
+      if (video) {
+        video.muted = true;
+        video.pause(); // Pause all videos to save resources
+        const soundOffIcon = media.querySelector('.sound-off-icon');
+        const soundOnIcon = media.querySelector('.sound-on-icon');
+        soundOffIcon.style.display = 'block';
+        soundOnIcon.style.display = 'none';
+      }
+    });
+  }
+
+  function playAllVideos() {
+    mediaElements.forEach(media => {
+      const video = media.querySelector('video');
+      if (video) {
+        video.muted = false; // Unmute videos if needed
+        playVideoWhenReady(video);
+      }
+    });
+  }
+
+  function openOverlay(index) {
+    disableScroll();
+    currentIndex = index;
+    const mediaContainer = document.querySelector('.media-container');
+mediaContainer.style.overflow = 'none';
+    const clonedMedia = mediaElements[currentIndex].cloneNode(true);
+    overlayContent.innerHTML = '';
+    overlayContent.appendChild(clonedMedia);
+    overlay.style.display = 'flex';
+    overlay.classList.add('overlay-show');
+
+    muteAllVideos();
+
+    const video = clonedMedia.querySelector('video');
+    if (video) {
+      const soundOffIcon = clonedMedia.querySelector('.sound-off-icon');
+      const soundOnIcon = clonedMedia.querySelector('.sound-on-icon');
+
+      video.muted = true;
+      soundOffIcon.style.display = 'block';
+      soundOnIcon.style.display = 'none';
+
+      soundOffIcon.addEventListener('click', () => {
+        video.muted = false;
+        soundOffIcon.style.display = 'none';
+        soundOnIcon.style.display = 'block';
       });
-    }
 
-    function playAllVideos() {
-      mediaElements.forEach(media => {
-        if (media.querySelector('video')) {
-          const video = media.querySelector('video');
-          video.play();
-        }
-      });
-    }
-
-    function openOverlay(index) {
-      disableScroll();
-      currentIndex = index;
-      const clonedMedia = mediaElements[currentIndex].cloneNode(true);
-      overlayContent.innerHTML = '';
-      overlayContent.appendChild(clonedMedia);
-      overlay.style.display = 'flex';
-      overlay.classList.add('overlay-show');
-
-      // Mute all main page videos when overlay is opened
-      muteAllVideos();
-
-      if (clonedMedia.querySelector('video')) {
-        const video = clonedMedia.querySelector('video');
-        const soundOffIcon = clonedMedia.querySelector('.sound-off-icon');
-        const soundOnIcon = clonedMedia.querySelector('.sound-on-icon');
-
+      soundOnIcon.addEventListener('click', () => {
         video.muted = true;
         soundOffIcon.style.display = 'block';
         soundOnIcon.style.display = 'none';
-
-        soundOffIcon.addEventListener('click', () => {
-          video.muted = false;
-          soundOffIcon.style.display = 'none';
-          soundOnIcon.style.display = 'block';
-        });
-
-        soundOnIcon.addEventListener('click', () => {
-          video.muted = true;
-          soundOffIcon.style.display = 'block';
-          soundOnIcon.style.display = 'none';
-        });
-
-        currentOverlayVideo = video;
-        video.play();
-      }
-    }
-
-    function closeOverlay() {
-      overlay.style.display = 'none';
-      enableScroll();
-      if (currentOverlayVideo) {
-        currentOverlayVideo.muted = true;
-        currentOverlayVideo = null;
-      }
-      playAllVideos();  // Ensure main page videos continue playing
-    }
-
-    mediaElements.forEach((media, index) => {
-      if (media.querySelector('video')) {
-        const video = media.querySelector('video');
-        const soundOffIcon = media.querySelector('.sound-off-icon');
-        const soundOnIcon = media.querySelector('.sound-on-icon');
-
-        // Remove the controls attribute
-        video.removeAttribute('controls');
-
-        video.play();
-
-        soundOffIcon.addEventListener('click', () => {
-          muteAllVideos();
-          video.muted = false;
-          soundOffIcon.style.display = 'none';
-          soundOnIcon.style.display = 'block';
-        });
-
-        soundOnIcon.addEventListener('click', () => {
-          video.muted = true;
-          soundOffIcon.style.display = 'block';
-          soundOnIcon.style.display = 'none';
-        });
-      }
-
-      media.addEventListener('click', (event) => {
-        if (event.target !== media.querySelector('.sound-off-icon') && event.target !== media.querySelector('.sound-on-icon')) {
-          openOverlay(index);
-        }
       });
-    });
 
-    closeBtn.addEventListener('click', closeOverlay);
+      currentOverlayVideo = video;
+      playVideoWhenReady(video);
+    }
+  }
 
-    prevBtn.addEventListener('click', () => {
-      if (currentIndex === 0) {
-        currentIndex = mediaElements.length - 1;
-      } else {
-        currentIndex -= 1;
+  function closeOverlay() {
+    overlay.style.display = 'none';
+    enableScroll();
+    if (currentOverlayVideo) {
+      currentOverlayVideo.muted = true;
+      currentOverlayVideo = null;
+    }
+    playAllVideos();
+  }
+
+  mediaElements.forEach((media, index) => {
+    if (media.querySelector('video')) {
+      const video = media.querySelector('video');
+      const soundOffIcon = media.querySelector('.sound-off-icon');
+      const soundOnIcon = media.querySelector('.sound-on-icon');
+
+      video.removeAttribute('controls');
+
+      playVideoWhenReady(video);
+
+      soundOffIcon.addEventListener('click', () => {
+        muteAllVideos();
+        video.muted = false;
+        soundOffIcon.style.display = 'none';
+        soundOnIcon.style.display = 'block';
+      });
+
+      soundOnIcon.addEventListener('click', () => {
+        video.muted = true;
+        soundOffIcon.style.display = 'block';
+        soundOnIcon.style.display = 'none';
+      });
+    }
+
+    media.addEventListener('click', (event) => {
+      if (event.target !== media.querySelector('.sound-off-icon') && event.target !== media.querySelector('.sound-on-icon')) {
+        openOverlay(index);
       }
-      openOverlay(currentIndex);
-    });
-
-    nextBtn.addEventListener('click', () => {
-      if (currentIndex === mediaElements.length - 1) {
-        currentIndex = 0;
-      } else {
-        currentIndex += 1;
-      }
-      openOverlay(currentIndex);
     });
   });
+
+  closeBtn.addEventListener('click', closeOverlay);
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex === 0) {
+      currentIndex = mediaElements.length - 1;
+    } else {
+      currentIndex -= 1;
+    }
+    openOverlay(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex === mediaElements.length - 1) {
+      currentIndex = 0;
+    } else {
+      currentIndex += 1;
+    }
+    openOverlay(currentIndex);
+  });
+});
 </script>
 
 <script>
