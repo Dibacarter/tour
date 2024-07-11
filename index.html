@@ -480,9 +480,6 @@ h1 {
     z-index: 10;
     display: none; /* Hide text by default */
     color: white; /* Ensures text color */
-  }
-
-  .text-only {
     display: block; /* Always show text for text-only circles */
     color: gray; /* Default text color for text-only circles */
   }
@@ -498,6 +495,8 @@ h1 {
     display: block;
     color: white !important; /* Text color on hover/touch */
   }
+
+.circle-text:touched, .circle-text.hover {color:white;}
 
   .circle:hover,
   .circle.touched, .circle-t:hover,
