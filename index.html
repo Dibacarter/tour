@@ -25,7 +25,13 @@
 <meta name="copyright" content="2024">
 
 <style>
-    @font-face {
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+            @font-face {
   font-family: 'BB Manual Mono Pro TX';
   src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-Regular.woff2?updatedAt=1722424863590') format('woff2');
 }
@@ -193,71 +199,79 @@ font-size:24px;
     #m {
         display: none;
     }
+    }
+
+/* Update the container styles */
+.container {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: row; /* Align children in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  padding: 0;
+  align-items:center;
+  box-sizing: border-box;
 }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        a {
-          color:white;
-          text-decoration:none;
-        }
-        .tour {
-            background: #000;
-            margin: 28px 0;
-            border:1px solid white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-        }
-        .tour img {
-          width:140px;
-            max-width: 150px;
-            margin-right: 20px;
-            border-radius: 4px;
-        }
-        @media screen and (max-width:780px) {
-.tour img {
-  width:100px;
-  margin-right:7px;
-}
+
 .tour {
-  padding:10px;
+  position: relative; /* Make this container the reference for absolute positioning */
+  color: white;
+  font-family: 'BB Manual Mono Pro TX', Arial;
+  background: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 280px; /* Width of each tour */
+  height: 280px; /* Height of each tour */
+  margin: 0 20px; /* Space between tours */
+  flex-shrink: 0; /* Prevent shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
 }
+
+.tour img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
 }
-        }
-        .tour-info {
-          padding:0;
-          margin:0;
-          top:0;
-            flex: 1;
-        }
-        .tour-info h2 {
-          color:white;
-          font-family:'BBManualMonoProTX', arial;
-          font-weight:300;
-          margin: 0 0 10px;
-          text-transform:uppercase;
-          padding:0;
-          top:0;
-        }
-        .tour-info h2 a {
-          font-family:'BBManualMonoProTX', arial;
-            color: #fff;
-            text-decoration: none;
-            border-bottom:1px solid white;
-        }
-        .tour-info a:hover {
-            text-decoration: none;
-            color: #3498db;
-            border-bottom:1px solid #3498db;
-        }
-        .tour-info p a:hover { 
-          border-bottom:none;
-        }
+
+.tour h1 {
+  font-weight:300;
+  width:100%;
+  text-transform:uppercase;
+  position: absolute; /* Position the heading over the image */
+  top: 50%; /* Vertically center the heading */
+  left: 50%; /* Horizontally center the heading */
+  transform: translate(-50%, -50%); /* Adjust for heading's dimensions */
+  color: white;
+  padding:0;
+  text-align: center;
+  font-size:21px;
+  font-family:'BBManualMonoProTX', Arial;
+  z-index: 7000; /* Ensure it's on top of the image */
+  margin: 0; /* Remove default margin */
+}
+
+.tour p {
+  font-weight:300;
+  width:100%;
+  text-transform:uppercase;
+  bottom:50px;
+  position: absolute; /* Position the heading over the image */
+  top: auto; /* Vertically center the heading */
+  left: 50%; /* Horizontally center the heading */
+  transform: translate(-50%, -50%); /* Adjust for heading's dimensions */
+  color: white;
+  padding:0;
+  text-align: center;
+  font-size:15px;
+  font-family:'BBManualMonoProTX', Arial;
+  z-index: 700; /* Ensure it's on top of the image */
+  margin: 0; /* Remove default margin */
+}
+
+
     </style>
 </head>
 <body>
@@ -315,63 +329,40 @@ PRIVACY POLICY
 </a>
 </div>
 
-<br><br><br><br>
 
 <div class="container">
 
-
 <a href="https://tour.khaliiil.com/terms-for-tour">
-<div class="tour">
-<div class="tour-info">
-<h2>TERMS & RULES</h2>
-<p>
-RULES FOR <a style="color:white;text-decoration:underline;" href="https://tour.khaliiil.com/">TOUR.KHALIIIL.COM</a>
-</p>
-</div>
-</div>
+    <div class="tour">
+    <h1>TERMS & RULES</h1>
+    <p>terms & conditions for tour.khaliiil.com</p>
+    </div>
 </a>
-
 
 <a href="https://tour.khaliiil.com/2024/switzerland">
-<div class="tour">
-<img src="https://ik.imagekit.io/ybebp19uwa/IMG_8357.jpeg?updatedAt=1722453209190" alt="Tour 1 Preview">
-<div class="tour-info">
-<h2>Switzerland</h2>
-<p>
-• BASEL<br>
-• INTERLAKEN
-</p>
-</div>
-</div>
+    <div class="tour">
+    <h1>switzerland</h1>
+    <p>• BASEL<br>• interlaken</p>
+    <img src="https://ik.imagekit.io/ybebp19uwa/6.JPG?updatedAt=1722466406033"/>
+    </div>
 </a>
 
-        
 <a href="https://tour.khaliiil.com/2024/germany">
-<div class="tour">
-<div class="tour-info">
-<h2>germany</h2>
-<p>
-• THE BLACK FOREST
-</p>
-</div>
-</div>
+    <div class="tour">
+    <h1 style="color:black;">germany</h1>
+    <p style="color:white;">the black forest</p>
+    <img src="https://ik.imagekit.io/ybebp19uwa/IMG_6517.jpeg?updatedAt=1722466601674"/>
+    </div>
 </a>
 
-        
 <a href="https://tour.khaliiil.com/2024/france">
-<div class="tour">
-<img src="https://ik.imagekit.io/ybebp19uwa/IMG_6402.jpeg?updatedAt=1722453308457" alt="Tour 3 Preview">
-<div class="tour-info">
-<h2>france</h2>
-<p>
-
-</p>
-</div>
-</div>
+    <div class="tour">
+    <h1>france</h1>
+    </div>
 </a>
 
-
 </div>
-<br><br><br><br>
+
+
 </body>
 </html>
