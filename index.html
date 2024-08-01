@@ -3,51 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khalil - TOUR</title>
+<title>Khalil</title>
+<meta charset="UTF-8">
 <meta name="description" content="The Official Website of Khalil">
 <meta property="og:description" content="The Official Website of Khalil">
-<meta property="og:image" content="https://tour.khaliiil.com/system/7FA53553-2225-48AC-B68C-89172E7E6340.jpeg">
-<meta property="og:url" content="https://tour.khaliiil.com">
+<meta property="og:image" content="https://www.khaliiil.com/system/7FA53553-2225-48AC-B68C-89172E7E6340.jpeg">
+<meta property="og:url" content="https://www.khaliiil.com">
 <meta property="og:site_name" content="Khaliil">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:author" content="Khalil">
 <link rel="icon" type="image/x-icon" href="https://khaliiil.com/system/FF863B55-25CD-41EA-B199-86DC40B5A73F.jpeg">    
-<meta name="URL" content="http://tour.khaliiil.com">
+<meta name="URL" content="http://www.khaliiil.com">
 <meta name="twitter:title" content="Khalil">
 <meta name="twitter:description" content="The Official Website of Khalil">
 <meta property="og:title" content="Khalil">
 <meta property="og:description" content="The Official Website of Khalil">
 <meta property="og:site_name" content="Khalil">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://tour.khaliiil.com/">
+<meta property="og:url" content="https://www.khaliiil.com/">
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="copyright" content="2024">
-
 <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-            @font-face {
+@font-face {
   font-family: 'BB Manual Mono Pro TX';
   src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-Regular.woff2?updatedAt=1722424863590') format('woff2');
 }
 @font-face {
-    font-family: 'BBManualMonoProTX';
-    src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?updatedAt=1722452612640') format('woff2');
+font-family: 'BBManualMonoTX';
+src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?updatedAt=1722452612640') format('woff2');
 }
-        body {
-            font-family: 'BB Manual Mono Pro TX',Arial;
-            background-color: #000;
-            margin: 0;
-            color:white;
-            padding: 0;
-        }
-
-        .nav-top {
+html, body {
+  margin: 0;
+  padding: 0;
+  background:black;
+  height: auto;
+  width:100%;
+  font-family: 'BB Manual Mono Pro TX',arial;
+  scroll-behavior: smooth;
+  color: white;
+}
+.nav-top {
   position: fixed;
   width: 100%;
   left: 0;
@@ -66,10 +62,11 @@
 
 .nav-top .menu {
   display: flex;
-  gap: 45px;
+  gap: 40px;
 }
 
 .nav-top .menu a {
+  font-family: 'BB Manual Mono Pro TX',arial;
   color: white;
   text-decoration: none;
   padding-bottom: 5px;
@@ -77,23 +74,23 @@
   font-size:20px;
 }
 
-@media screen and (max-width:300px) {
-.nav-top .menu {
-    gap:20px;
-}
-}
-@media screen and (min-width:301px) and (max-width:500px) {
+@media screen and (max-width:400px) {
 .nav-top .menu {
     gap:45px;
 }
+}
+@media screen and (min-width:401px) and (max-width:500px) {
+.nav-top .menu {
+    gap:55px;
+}
 .nav-top .menu a {
-  font-size:22px;
+  font-size:20px;
 }
 }
 
 @media screen and (min-width:501px) and (max-width:600px) {
 .nav-top .menu {
-    gap:100px;
+    gap:70px;
 }
 .nav-top .menu a {
     font-size:22px;
@@ -102,13 +99,13 @@
 
 @media screen and (min-width:601px) and (max-width:700px) {
 .nav-top .menu {
-    gap:120px;
+    gap:90px;
 }
 }
 
 @media screen and (min-width:701px) and (max-width:800px) {
 .nav-top .menu {
-    gap:102px;
+    gap:109px;
 }
 .nav-top .menu a {
     font-size:22.6px;
@@ -117,7 +114,7 @@
 
 @media screen and (min-width:801px) and (max-width:990px) {
 .nav-top .menu {
-    gap:105px;
+    gap:120px;
 }
 .nav-top .menu a {
     font-size:22px;
@@ -132,7 +129,6 @@ font-size:24px;
 }
 }
 
-        
 .footert {
     position: fixed;
     bottom: 0;
@@ -199,82 +195,88 @@ font-size:24px;
     #m {
         display: none;
     }
-    }
-
-/* Update the container styles */
-.container {
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  display: flex;
-  flex-direction: row; /* Align children in a row */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  padding: 0;
-  align-items:center;
-  box-sizing: border-box;
 }
 
-.tour {
-  position: relative; /* Make this container the reference for absolute positioning */
-  color: white;
-  font-family: 'BB Manual Mono Pro TX', Arial;
-  background: black;
-  border: 1px solid white;
-  border-radius: 5px;
-  width: 280px; /* Width of each tour */
-  height: 280px; /* Height of each tour */
-  margin: 0 20px; /* Space between tours */
-  flex-shrink: 0; /* Prevent shrinking */
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center content horizontally */
+.image-container {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tour img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image covers the container */
+.image-link {
+    width: 100%;
+    background:none;
+    text-decoration: none;
+    border:none;
+    margin-bottom: 20px; /* Space between images */
 }
 
-.tour h1 {
-  font-weight:300;
-  width:100%;
-  text-transform:uppercase;
-  position: absolute; /* Position the heading over the image */
-  top: 50%; /* Vertically center the heading */
-  left: 50%; /* Horizontally center the heading */
-  transform: translate(-50%, -50%); /* Adjust for heading's dimensions */
-  color: white;
-  padding:0;
-  text-align: center;
-  font-size:21px;
-  font-family:'BBManualMonoProTX', Arial;
-  z-index: 7000; /* Ensure it's on top of the image */
-  margin: 0; /* Remove default margin */
+.image-box {
+    margin:0 auto;
+    position: relative;
+    border:none;
+    width: 90%;
+    padding-top: 90%; /* 1:1 Aspect Ratio */
+    overflow: hidden;
+    background-color: none;
+    margin-bottom:60px;
 }
 
-.tour p {
-  font-weight:300;
-  width:100%;
-  text-transform:uppercase;
-  bottom:50px;
-  position: absolute; /* Position the heading over the image */
-  top: auto; /* Vertically center the heading */
-  left: 50%; /* Horizontally center the heading */
-  transform: translate(-50%, -50%); /* Adjust for heading's dimensions */
-  color: white;
-  padding:0;
-  text-align: center;
-  font-size:15px;
-  font-family:'BBManualMonoProTX', Arial;
-  z-index: 700; /* Ensure it's on top of the image */
-  margin: 0; /* Remove default margin */
+.image-boxn {
+    margin:0 auto;
+    position: relative;
+    width: 90%;
+    padding-top: 90%; /* 1:1 Aspect Ratio */
+    overflow: hidden;
+    background-color: none;
+    border:1px solid white;
+    margin-bottom:60px;
 }
 
+.image-box img {
+    border:none;
+    position: absolute;
+    top: 0;
+    display:block;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    </style>
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'BBManualMonoTX', Arial;
+    width:100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.image-title-b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'BBManualMonoTX', Arial;
+    width:100%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+}
+
+</style>
+
+
 </head>
-<body>
+<body style="-webkit-touch-callout: none; -webkit-user-select: text;padding-top:90px;">
+
 
 
 <div class="nav-top">
@@ -330,36 +332,44 @@ PRIVACY POLICY
 </div>
 
 
-<div class="container">
 
-<a href="https://tour.khaliiil.com/terms-for-tour">
-    <div class="tour">
-    <h1>TERMS & RULES</h1>
-    <p>terms & conditions for tour.khaliiil.com</p>
-    </div>
+
+<div class="image-container">
+
+<a class="image-link" href="https://tour.khaliiil.com/terms">
+<div class="image-boxn">
+<div class="image-title">
+TERMS & RULES
+</div>
+</div>
 </a>
 
-<a href="https://tour.khaliiil.com/2024/switzerland">
-    <div class="tour">
-    <h1>switzerland</h1>
-    <p>• BASEL<br>• interlaken</p>
-    <img src="https://ik.imagekit.io/ybebp19uwa/6.JPG?updatedAt=1722466406033"/>
-    </div>
+<a class="image-link" href="https://tour.khaliiil.com/2024/switzerland">
+<div class="image-box">
+<img src="https://ik.imagekit.io/ybebp19uwa/6.JPG?updatedAt=1722466406033"/>
+<div class="image-title">
+SWITZERLAND
+</div>
+</div>
 </a>
 
-<a href="https://tour.khaliiil.com/2024/germany">
-    <div class="tour">
-    <h1 style="color:black;">germany</h1>
-    <p style="color:white;">the black forest</p>
-    <img src="https://ik.imagekit.io/ybebp19uwa/IMG_6517.jpeg?updatedAt=1722466601674"/>
-    </div>
+<a class="image-link" href="https://tour.khaliiil.com/2024/germany">
+<div class="image-box">
+<img src="https://ik.imagekit.io/ybebp19uwa/IMG_6517.jpeg?updatedAt=1722466601674"/>
+<div class="image-title-b">
+GERMANY
+</div>
+</div>
 </a>
 
-<a href="https://tour.khaliiil.com/2024/france">
-    <div class="tour">
-    <h1>france</h1>
-    </div>
+<a class="image-link" href="https://tour.khaliiil.com/2024/france">
+<div class="image-boxn">
+<div class="image-title">
+FRANCE
+</div>
+</div>
 </a>
+
 
 </div>
 
