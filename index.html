@@ -214,9 +214,9 @@ font-size:24px;
 .circle
 {position:relative;display:inline-block;width:280px;height:280px;border-radius:50%;overflow:hidden;background:none;border:1px solid white;}
 .circle img
-{width:100%;height:100%;object-fit:cover;border-radius:50%;}
+{width:100%;height:100%;object-fit:cover;border-radius:50%;-webkit-touch-callout: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .circle .title-overlay
-{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:500;text-transform:uppercase;color:white;font-size:1.2em;font-weight:normal;pointer-events:none;word-wrap:break-word;}
+{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:500;text-transform:uppercase;color:white;font-size:1.2em;font-weight:normal;pointer-events:none;word-wrap:break-word;z-index:900;}
 .small-title
 {margin-top:10px;font-size:0.7rem;color:#fff;z-index:1000;display:block;letter-spacing:2px;word-spacing:1px;word-wrap:break-word;}
 .circle a
@@ -350,6 +350,7 @@ All rights and credits belong to Khalil. No part of this work may be used, repro
 </div>
 <div class="small-title">THE BLACK FOREST</div>
 </div>
+
 <div class="circle-container">
 <div class="circle">
 <a href="https://tour.khaliiil.com/2024/france">
