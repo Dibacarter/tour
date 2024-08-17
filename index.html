@@ -4,48 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khalil</title>
-<meta charset="UTF-8">
-<meta name="description" content="The Official Website of Khalil">
 <meta property="og:description" content="The Official Website of Khalil">
 <meta property="og:image" content="https://www.khaliiil.com/system/7FA53553-2225-48AC-B68C-89172E7E6340.jpeg">
-<meta property="og:url" content="https://www.khaliiil.com">
+<meta property="og:url" content="https://tour.khaliiil.com">
 <meta property="og:site_name" content="Khaliil">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:author" content="Khalil">
 <link rel="icon" type="image/x-icon" href="https://khaliiil.com/system/FF863B55-25CD-41EA-B199-86DC40B5A73F.jpeg">    
-<meta name="URL" content="http://www.khaliiil.com">
+<meta name="URL" content="http://tour.khaliiil.com">
 <meta name="twitter:title" content="Khalil">
 <meta name="twitter:description" content="The Official Website of Khalil">
 <meta property="og:title" content="Khalil">
 <meta property="og:description" content="The Official Website of Khalil">
 <meta property="og:site_name" content="Khalil">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.khaliiil.com/">
+<meta property="og:url" content="https://tour.khaliiil.com/">
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="copyright" content="2024">
 <style>
-@font-face {
-font-family: 'BB Manual Mono Pro TX';
-src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-Regular.woff2?updatedAt=1722424863590') format('woff2');
-}
-@font-face {
-font-family: 'BBManualMonoTX';
-src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?updatedAt=1722452612640') format('woff2');
-}
-
-  body {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'BB Manual Mono Pro TX',arial;
-    padding-right:70px;
-    padding-left:70px;
-    background:#000;
-  }
-
+@font-face 
+{font-family: 'BB Manual Mono Pro TX';src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-Regular.woff2?updatedAt=1722424863590') format('woff2');}
+@font-face 
+{font-family: 'BBManualMonoTX';src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?updatedAt=1722452612640') format('woff2');}
+*
+{margin:0;padding:0;box-sizing:border-box;}
+body,html
+{height:100%;overflow:hidden;background:#000;color:white;font-family:'BB Manual Mono Pro TX', Arial;font-weight:300;}
 .nav-top {
   position: fixed;
   width: 100%;
@@ -58,7 +43,7 @@ src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?upd
 
 .nav-top {
   top: 0;
-  height: 80px;
+  height: 60px;
     /* Define the background with a linear gradient */
     background: none;
   text-transform:uppercase;
@@ -70,6 +55,7 @@ src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?upd
 }
 
 .nav-top .menu a {
+  font-family: 'BB Manual Mono Pro TX',arial;
   color: white;
   text-decoration: none;
   padding-bottom: 5px;
@@ -123,13 +109,13 @@ src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?upd
 
 @media screen and (min-width:601px) and (max-width:700px) {
 .nav-top .menu {
-    gap:120px;
+    gap:105px;
 }
 }
 
 @media screen and (min-width:701px) and (max-width:800px) {
 .nav-top .menu {
-    gap:105px;
+    gap:110px;
 }
 .nav-top .menu a {
     font-size:22.6px;
@@ -138,7 +124,7 @@ src: url('https://ik.imagekit.io/ybebp19uwa/BBManualMonoProTX-SemiBold.woff2?upd
 
 @media screen and (min-width:801px) and (max-width:990px) {
 .nav-top .menu {
-    gap:110px;
+    gap:120px;
 }
 .nav-top .menu a {
     font-size:22px;
@@ -188,8 +174,8 @@ font-size:24px;
 @media (max-width: 799px) {
     .footert {
         justify-content: space-between;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .footert button {
         margin: 0 5px;
@@ -221,250 +207,35 @@ font-size:24px;
         display: none;
     }
 }
-.fade-top, .fade-bottom {
-            position: fixed; /* Make the fades fixed */
-            left: 0;
-            right: 0;
-            pointer-events: none; /* Allow clicks to pass through */
-            z-index: 1000; /* Ensure they are above the content */
-            border: none; /* Ensure no border is applied */
-            outline: none; /* Ensure no outline is applied */
-        }
-
-        .fade-top {
-            top: 0; /* Position the up fade immediately below the black space */
-            left: 0;
-            right: 0;
-            height: 110px; /* Adjust the height of the fade */
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        }
-            .fade-bottom {
-            bottom: 0; /* Position the down fade immediately above the black space */
-            left: 0;
-            right: 0;
-            height: 110px; /* Adjust the height of the fade */
-            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        }
-.fixed-t-l {
-  position:fixed;
-  color:white;
-  background:none;
-  left:0;
-  padding:0;
-  padding-left:80px;
-  top:80px;
-  z-index:900;
-  font-size:17px;
-  text-decoration:underline;
-  text-underline-offset:3.6px;
-}
-.fixed-t-r {
-    text-underline-offset:3.6px;
-  text-decoration:underline;
-  position:fixed;
-  color:white;
-  background:none;
-  right:0;
-  top:80px;
-  padding:0;
-  margin:0;
-  padding-right:80px;
-  z-index:900;
-  font-size:17px;
-}
-
-.fixed-t-l {
-  padding-left:190px;
-  padding-right:auto;
-}
-.fixed-t-r {
-  padding-right:190px;
-  padding-right:auto;
-}
-}
-  .circle-link {
-    text-decoration: none; /* Removes underline from links */
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap; /* Allow circles to wrap to the next row */
-    justify-content: center; /* Center circles horizontally */
-  }
-
-.circle {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  background-color: black;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'BBManualMonoTX',arial;
-  margin: 17px; /* Add equal spacing between circles */
-  font-weight: 300;
-}
-
-.circle-t {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  border: 2px solid gray; /* Default border color */
-  background-color: black;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color:white;
-  font-size: 20px;
-  font-family: 'BBManualMonoTX',arial;
-  margin: 17px; /* Add equal spacing between circles */
-  font-weight: 300;
-}
-
-  @media screen and (max-width: 795px) {
-    .circle, .circle-t{
-      width: 328px; /* Adjust width for larger screens */
-      height: 328px; /* Adjust height for larger screens */
-      margin-bottom: 70px; /* Add space between rows of circles */
-    }
-    .circle-text,
-  .text-only {
-    font-size: 19.8px;
-    }
-    }
-    
-    
-  /* Media query for larger screens */
-  @media screen and (min-width: 2900px) {
-    
-      .container {
-    display: flex;
-    flex-wrap: wrap; /* Allow circles to wrap to the next row */
-    justify-content: center; /* Center circles horizontally */
-    padding-right:25px;
-    padding-left:25px;
-  }
-    
-    .circle, .circle-t{
-      width: 220px; /* Adjust width for larger screens */
-      height: 220px; /* Adjust height for larger screens */
-      margin-right: 30px; /* Add space between circles */
-      margin-bottom: 30px; /* Add space between rows of circles */
-      z-index:800;
-    }
-
-  .circle-text,
-  .text-only {
-    font-family:'BBManualMonoTX',arial;
-    font-size: 11.9px;
-    }
-  }
-
-  .circle-text {
-    border:none;
-    color:white;
-    display:block;
-    text-transform:uppercase;
-    z-index:1000;
-    position:absolute;
-}
-
-  .circle img {
-    z-index:900;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    position: absolute;
-   -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: auto;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-    -webkit-touch-callout: none;
-}
-
-  .text-only {
-    position: relative;
-    z-index: 10;
-    display: none; /* Hide text by default */
-    color: white; /* Ensures text color */
-    display: block; /* Always show text for text-only circles */
-    color: gray; /* Default text color for text-only circles */
-  }
-
-  #overlay {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    z-index: 10000;
-    justify-content: center;
-    align-items: center;
-    overflow:hidden;
-    touch-action:none;
-    -webkit-touch-callout:none;
-    border-radius:5px;
-}
-
-#overlayContent {
-    position: relative;
-    background-color: white;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#closeOverlay {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    width: 15px;
-    height: auto;
-    margin:10px;
-    padding:5px;
-}
-
-#closeOverlay:hover {
-  background:rgba(255, 255, 255, 0.2);
-  border-radius:5px;
-}
+.container
+{display:flex;align-items:center;height:100%;overflow-x:auto;white-space:nowrap;padding-left:20px;} /* Added padding-left to container */
+.circle-container
+{display:inline-block;text-align:center;flex-shrink:0;margin:0 20px;}
+.circle
+{position:relative;display:inline-block;width:280px;height:280px;border-radius:50%;overflow:hidden;background:none;border:1px solid white;}
+.circle img
+{width:100%;height:100%;object-fit:cover;border-radius:50%;}
+.circle .title-overlay
+{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:500;text-transform:uppercase;color:white;font-size:1.2em;font-weight:normal;pointer-events:none;word-wrap:break-word;}
+.small-title
+{margin-top:10px;font-size:0.7rem;color:#fff;z-index:1000;display:block;letter-spacing:2px;word-spacing:1px;word-wrap:break-word;}
+.circle a
+{text-decoration:none;color:inherit;}
+ #overlay
+{display: none;position: fixed;top: 0;left:0;width:100%;height: 100%;background-color: rgba(0, 0, 0, 0.5);z-index: 10000;justify-content: center;align-items: center;overflow:hidden;touch-action:none;-webkit-touch-callout:none;border-radius:5px;}
+#overlayContent
+{position: relative;background-color: white;width: 300px;height: 300px;display: flex;justify-content: center;align-items: center;text-align:center;padding: 20px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+#closeOverlay
+{position: absolute;top: 10px;right: 10px;cursor: pointer;width: 25px;height: auto;margin:10px;padding:5px;}
+#closeOverlay:hover
+{background:rgba(255, 255, 255, 0.2);border-radius:5px;}
+.t-bottom
+{position: fixed;font-family:'BBManualMonoTX',arial;cursor:pointer;padding:0;margin:0;color: #fff;bottom: 0;right: 0;text-transform: uppercase;margin-bottom: 90px;z-index: 100;margin-right: 30px;opacity: 0;transition: opacity 0.5s ease;}
+.t-top
+{position: fixed;font-family:'BBManualMonoTX',arial;cursor:pointer;padding:0;margin:0;color: #fff;top: 0;left: 0;text-transform: uppercase;margin-top: 90px;z-index: 100;margin-left: 30px;transition: opacity 0.5s ease;}  
 </style>
 </head>
 <body>
-<div class="fade-top"></div>
-<div class="fade-bottom"></div>
-<a href="https://tour.khaliiil.com">
-<div class="fixed-t-l">
-2024
-</div>
-<div class="fixed-t-r">
-WORLD WIDE
-</div>
-</a>
 <div class="nav-top">
 <div class="menu">
 <a href="https://www.khaliiil.com/">
@@ -489,98 +260,105 @@ BLOG
 </a>
 </div>
 </div>
-
+</div>
 <div class="footert" id="m">
 <a href="https://khaliiil.com/join">
 JOIN
 </a>
-<a href="https://khaliiil.com/terms-conditions">
-TERMS
+<a href="https://khaliiil.com/privacy-policy">
+PRIVACY
 </a>
 <a>
 &copy;
 </a>
 <a href="https://khaliiil.com/credits">
-credits
+CREDITS
 </a>
-<a href="https://khaliiil.com/privacy-policy">
-PRIVACY
+<a href="https://khaliiil.com/terms-conditions">
+TERMS
 </a>
 </div>
-
 <div class="footert" id="d">
 <a href="https://khaliiil.com/join">
 JOIN
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/terms-conditions">
 TERMS & CONDITIONS
 </a>
+<p>
+/
+</p>
 <a>
 &copy; 2024 KHALIL
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/credits">
-credits
+CREDITS
 </a>
+<p>
+/
+</p>
 <a href="https://khaliiil.com/privacy-policy">
 PRIVACY POLICY
 </a>
 </div>
+<div class="t-top" id="topText">
+2024 〉
+</div>
+<div class="t-bottom" id="bottomText">
+〈 WORLD WIDE
+</div>
 <div id="overlay">
 <div id="overlayContent">
-<img id="closeOverlay" style="filter: invert(100%);" src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="Close">
-<p style="text-transform:uppercase;line-height:1.8;">
+<img id="closeOverlay" style="filter:invert(100%);" src="https://ik.imagekit.io/ybebp19uwa/D2F4C472-AD0C-4B13-8920-37AD3DD9EB63.png?updatedAt=1722425833911" alt="CLOSE">
+<p style="color:black;text-transform:uppercase;line-height:1.8;">
 All rights and credits belong to Khalil. No part of this work may be used, reproduced, or transmitted in any form or by any means without prior permission.
 </p>
 </div>
 </div>
-
 <div class="container">
 <div id="openOverlay">
-<a href="#" class="circle-link">
-<div class="circle-t">
-<div class="text-only">CREDITS</div>
-</div>
-</div>
-</a>
-
-<div class="container">
-<a href="https://tour.khaliiil.com/2024/switzerland" class="circle-link">
+<div class="circle-container">
 <div class="circle">
-<img src="https://raw.githubusercontent.com/Dibacarter/tour/main/ss-imgs/2.JPG">
-<div class="circle-text">Switzerland</div>
-</div>
+<a href="#">
+<div class="title-overlay">CREDITS</div>
 </a>
 </div>
-
-<div class="container">
-<a href="https://tour.khaliiil.com/2024/germany" class="circle-link">
+<div class="small-title"><span style="font-family:'BBManualMonoTX',arial;">&copy; / 2024 WORLD WIDE</span></div>
+</div>
+</div>
+<div class="circle-container">
 <div class="circle">
-<img src="https://raw.githubusercontent.com/Dibacarter/tour/main/media/IMG_6596.jpeg">
-<div class="circle-text">GERMANY</div>
-</div>
+<a href="https://tour.khaliiil.com/2024/switzerland">
+<img src="https://raw.githubusercontent.com/Dibacarter/tour/main/ss-imgs/2.JPG" alt="Switzerland">
+<div class="title-overlay">SWITZERLAND</div>
 </a>
 </div>
-
-<div class="container">
-<a href="https://tour.khaliiil.com/2024/france" class="circle-link">
-<div class="circle-t">
-<div class="text-only">FRANCE</div>
+<div class="small-title">BASEL, INTERLAKEN, BERN, ZÜRICH</div>
 </div>
-</a>
-</div>
-
-<div class="container">
-<a href="https://tour.khaliiil.com/" class="circle-link">
+<div class="circle-container">
 <div class="circle">
-<img src="https://raw.githubusercontent.com/Dibacarter/tour/main/media/IMG_6435.jpeg">
-<div class="circle-text">ELAT</div>
-</div>
+<a href="https://tour.khaliiil.com/2024/germany">
+<img src="https://ik.imagekit.io/ybebp19uwa/IMG_6593.jpeg" alt="Germany">
+<div class="title-overlay">GERMANY</div>
 </a>
 </div>
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="small-title">THE BLACK FOREST</div>
+</div>
+<div class="circle-container">
+<div class="circle">
+<a href="https://tour.khaliiil.com/2024/france">
+<div class="title-overlay">FRANCE</div>
+</a>
+</div>
+<div class="small-title">RIQUEWIHR, COLMAR, STRASBOURG</div>
+</div>
+</div>
 <script>
 document.getElementById("openOverlay").onclick = function() {
     document.getElementById("overlay").style.display = "flex";
@@ -591,33 +369,32 @@ document.getElementById("closeOverlay").onclick = function() {
 };
 </script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var circles = document.querySelectorAll('.circle');
-    var circlest = document.querySelectorAll('.circle-t');
+const container = document.querySelector('.container');
+const topText = document.getElementById('topText');
+const bottomText = document.getElementById('bottomText');
 
-    circles.forEach(function(circle) {
-        circle.addEventListener('touchstart', function() {
-            // Apply 'touched' class
-            this.classList.add('touched');
-        });
+// Scroll to the end when top text is clicked
+topText.addEventListener('click', () => {
+    container.scrollTo({ left: container.scrollWidth, behavior: 'smooth' });
+});
 
-        circle.addEventListener('touchend', function() {
-            // Remove 'touched' class
-            this.classList.remove('touched');
-        });
-    });
+// Scroll to the start when bottom text is clicked
+bottomText.addEventListener('click', () => {
+    container.scrollTo({ left: 0, behavior: 'smooth' });
+});
 
-    circlest.forEach(function(circleT) {
-        circleT.addEventListener('touchstart', function() {
-            // Apply 'touched' class
-            this.classList.add('touched');
-        });
+// Toggle visibility of top and bottom texts based on scroll position
+container.addEventListener('scroll', () => {
+    const scrollPosition = container.scrollLeft;
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
 
-        circleT.addEventListener('touchend', function() {
-            // Remove 'touched' class
-            this.classList.remove('touched');
-        });
-    });
+    if (scrollPosition >= maxScrollLeft / 2) {
+        topText.style.opacity = '0';
+        bottomText.style.opacity = '1';
+    } else {
+        topText.style.opacity = '1';
+        bottomText.style.opacity = '0';
+    }
 });
 </script>
 </body>
