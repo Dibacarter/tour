@@ -389,14 +389,20 @@ bottomText.addEventListener('click', () => {
 container.addEventListener('scroll', () => {
     const scrollPosition = container.scrollLeft;
     const maxScrollLeft = container.scrollWidth - container.clientWidth;
+if (scrollPosition >= maxScrollLeft / 2) {
+    topText.style.opacity = '0';
+    topText.style.pointerEvents = 'none';
+    
+    bottomText.style.opacity = '1';
+    bottomText.style.pointerEvents = 'auto';
+} else {
+    topText.style.opacity = '1';
+    topText.style.pointerEvents = 'auto';
+    
+    bottomText.style.opacity = '0';
+    bottomText.style.pointerEvents = 'none';
+}
 
-    if (scrollPosition >= maxScrollLeft / 2) {
-        topText.style.opacity = '0';
-        bottomText.style.opacity = '1';
-    } else {
-        topText.style.opacity = '1';
-        bottomText.style.opacity = '0';
-    }
 });
 </script>
 </body>
