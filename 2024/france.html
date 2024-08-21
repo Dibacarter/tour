@@ -303,6 +303,7 @@ body.no-scroll {
   align-items: center;
   z-index: 1000;
   touch-action: pan-x pan-y;
+  -webkit-touch-callout:none;
 }
 
 #overlay-content {
@@ -518,14 +519,14 @@ video {
             top: 0; /* Position the up fade immediately below the black space */
             left: 0;
             right: 0;
-            height: 110px; /* Adjust the height of the fade */
+            height: 60px; /* Adjust the height of the fade */
             background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         }
             .fade-bottom {
             bottom: 0; /* Position the down fade immediately above the black space */
             left: 0;
             right: 0;
-            height: 110px; /* Adjust the height of the fade */
+            height: 60px; /* Adjust the height of the fade */
             background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         }
 
