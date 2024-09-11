@@ -334,6 +334,32 @@ CREDITS
   <img id="close-btn" style="filter: invert(100%);" src="https://raw.githubusercontent.com/Khalil2000web/Of/main/system/IMG_9107.webp" alt="Close">
 </div>
 
+
+<script>
+function disableBodyScroll() {
+  document.body.addEventListener('touchmove', preventDefault, { passive: false });
+  document.body.addEventListener('touchstart', preventDefault, { passive: false });
+}
+
+function enableBodyScroll() {
+  document.body.removeEventListener('touchmove', preventDefault, { passive: false });
+  document.body.removeEventListener('touchstart', preventDefault, { passive: false });
+}
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function openOverlay() {
+  disableBodyScroll();
+  document.getElementById('overlay').style.display = 'block';
+}
+
+function closeOverlay() {
+  enableBodyScroll();
+  document.getElementById('overlay').style.display = 'none';
+}
+</script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const mediaElements = document.querySelectorAll('.media');
