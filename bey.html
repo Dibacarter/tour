@@ -207,13 +207,18 @@ body {
 
 @media screen and (min-width: 768px) {
 .grid-container {
-  width:60%;
+  width:50%;
   grid-template-columns: repeat(3, 1fr);
 }
+
+
+    .grid-item {width:280px;height:280px;}
+    .grid-container {gap:20px;}
+    .grid-item p {font-size:1.3rem;}
 }
 
 @media screen and (max-width: 670px) {
-    .grid-item {width:300px;height:300px;}
+    .grid-item {width:330px;height:330px;}
     .grid-container {gap:40px;}
     .grid-item p {font-size:1.1rem;}
 }
