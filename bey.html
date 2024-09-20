@@ -205,22 +205,27 @@ body {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:900px) {
 .grid-container {
   width:50%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-
-
     .grid-item {width:280px;height:280px;}
     .grid-container {gap:20px;}
     .grid-item p {font-size:1.3rem;}
 }
 
+@media screen and (min-width: 901px) {
+    .grid-container {
+  width:60%;
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
 @media screen and (max-width: 670px) {
     .grid-item {width:330px;height:330px;}
     .grid-container {gap:40px;}
-    .grid-item p {font-size:1.1rem;}
+    .grid-item p {font-size:1.3rem;}
 }
 
 
@@ -234,8 +239,8 @@ body {
 .right-text {right: 0;padding-right: 30px;font-size:19px;}}
 
 @media screen and (min-width:401px) and (max-width:500px) {
-.left-text {left: 0;padding-left: 40px;}
-.right-text {right: 0;padding-right: 40px;padding-right:auto;}}
+.left-text {left: 0;padding-left: 30px;}
+.right-text {right: 0;padding-right: 30px;padding-right:auto;}}
 
 @media screen and (min-width:401px) and (max-width:500px) {
 .left-text {left: 0;padding-left: 60px;padding-right:auto;}
