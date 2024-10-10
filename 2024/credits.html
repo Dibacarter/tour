@@ -2,658 +2,320 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khalil</title>
+<meta name="description" content="The Official Website of Khalil">
+<link rel="icon" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/favicon.ico">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/android-chrome-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/android-chrome-192x192.png" sizes="192x192">  
+<meta name="URL" content="http://tour.khaliiil.com">
+<meta name="twitter:description" content="The Official Website of Khalil">
+<meta property="og:title" content="Khalil">
+<meta property="og:description" content="The Official Website of Khalil">
+<meta property="og:image" content="https://raw.githubusercontent.com/Khalil2000web/Media/refs/heads/main/static/media/head/photo-output.jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Khalil">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tour.khaliiil.com/">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="copyright" content="2024">
+<style>
+:root {
+  --primary-color: #fff;
+  --secondary-color: #ccc;
+  --accent-color: #ddd;
+  --background-color: #000;
+  --light-background-color: #ffffff;
+  --dark-background-color: #333333;
+  --text-color: #fff;
+  --light-text-color: #666;
+  --heading-color: #111;
+  --border-color: #ccc;
+  --light-border-color: #eaeaea;
+  --button-text-color: #fff;
+  --button-hover-bg: #2980b9;
 
- <style>
-@font-face {
-    font-family: 'BBManualMonoProTX';
-    src: url('https://khaliiil.com/BBManualMonoProTX-SemiBold.woff2') format('woff2');
+  /* Font Sizes */
+  --font-size-base: 16px;
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-xlarge: 2rem;
+  --font-size-xxlarge: 3rem;
+
+  /* Font Families */
+  --font-family-sans: 'Arial', sans-serif;
+  --font-family-serif: 'Georgia', serif;
+  --font-family-mono: 'Courier New', monospace;
+  --font-family-display: 'Poppins', sans-serif;
+  --font-main: 'BB Manual Mono Regular', Arial, sans-serif;
+  --bold-BBMMPTX-font:'BB Manual Mono SemiBold','BB Manual Mono Regular', Arial, sans-serif;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Line Heights */
+  --line-height-normal: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --padding: 20px;
+  --margin: 20px;
+
+  /* Borders */
+  --border-width-thin: 1px;
+  --border-width-thick: 2px;
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+
+  /* Shadows */
+  --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --box-shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+  /* Animations */
+  --animation-duration-short: 0.2s;
+  --animation-duration-medium: 0.5s;
+  --animation-duration-long: 1s;
+  --animation-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --animation-bounce: ease-in-out 1.5s infinite bounce;
+
+  /* Transitions */
+  --transition-duration-short: 0.2s;
+  --transition-duration-medium: 0.5s;
+  --transition-duration-long: 1s;
+  --transition-ease: ease;
+  --transition-ease-in-out: ease-in-out;
+--z-index-low: 1;
+--z-index-medium: 10;
+--z-index-high: 100;
+--z-index-max: 1000;
+--grid-columns: 12;
+--grid-gap: 16px;
+--width-max: 1200px;
+--width-container: 90%;
+--width-sidebar: 250px;
+--width-content: 75%;
+--height-header: 80px;
+--height-footer: 100px;
+--breakpoint-xs: 480px;
+--breakpoint-sm: 768px;
+--breakpoint-md: 1024px;
+--breakpoint-lg: 1200px;
+--breakpoint-xl: 1440px;
+--button-padding: 12px 24px;
+--button-border-radius: 8px;
+--button-bg: var(--primary-color);
+--button-hover-bg: var(--button-hover-bg);
+--button-disabled-bg: #95a5a6;
+--button-font-size: var(--font-size-medium);
+--input-padding: 10px 15px;
+--input-border-radius: var(--border-radius-small);
+--input-border: var(--border-width-thin) solid var(--border-color);
+--input-focus-border-color: var(--primary-color);
+--icon-size-small: 16px;
+--icon-size-medium: 24px;
+--icon-size-large: 32px;
+--list-padding: var(--spacing-md);
+--list-item-margin-bottom: var(--spacing-xs);
+--overlay-bg-color: rgba(0, 0, 0, 0.7);
+--modal-padding: var(--spacing-lg);
+--modal-width: 90%;
+--modal-max-width: 500px;
+--modal-border-radius: var(--border-radius-medium);
+--tooltip-bg-color: var(--accent-color);
+--tooltip-text-color: #fff;
+--tooltip-font-size: var(--font-size-small);
+--tooltip-padding: 5px 10px;
+--scrollbar-width: 10px;
+--scrollbar-track-color: #f0f0f0;
+--scrollbar-thumb-color: var(--primary-color);
+--link-color: var(--primary-color);
+--link-hover-color: var(--secondary-color);
+--link-decoration: none;
+--link-hover-decoration: underline;
+--table-border-color: var(--border-color);
+--table-padding: var(--spacing-sm);
+--table-striped-bg: #f9f9f9;
+--container-max-width: 1200px;
+--header-height: 70px;
+--footer-height: 100px;
+--card-padding: var(--spacing-md);
+--card-border-radius: var(--border-radius-medium);
 }
+@font-face {font-family: 'BB Manual Mono Regular';src: url('https://raw.githubusercontent.com/Khalil2000web/Of/main/system/fonts/BBManualMonoProTX.22d272fc.ttf') format('truetype');font-display: swap;font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;}
+@font-face {font-family: 'BB Manual Mono SemiBold';src: url('https://raw.githubusercontent.com/Khalil2000web/Of/main/system/fonts/BBManualMonoProTX-SemiBold.otf') format('opentype');font-display: swap;font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;}
+body, html {margin:0;padding:0;color:var(--text-color);font-family:var(--font-main);background-color:var(--background-color)}
+.nav_bottom {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);}
+.nav_bottom {bottom:16px;background: none;}
+.nav_bottom .menu {display: flex;gap: 45px;}
+.nav_bottom .menu a, .nav_bottom .menu p {text-shadow:none;font-family:var(--font-main);color:var(--text-color);text-decoration: none;font-weight:var(--font-weight-light);font-size:16.6px;text-transform:uppercase;bottom:0;padding:0;margin:0;}
+.nav_bottom .menu a {cursor:pointer;}
+@media screen and (max-width:400px) {
+.nav_bottom .menu {gap:20px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+@media screen and (min-width:401px) and (max-width:500px) {
+.nav_bottom .menu {gap:30px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+@media screen and (min-width:501px) and (max-width:600px) {
+.nav_bottom .menu {gap:40px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:block;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+@media screen and (min-width:601px) and (max-width:700px) {
+.nav_bottom .menu {gap:50px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:block;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+@media screen and (min-width:701px) and (max-width:800px) {
+.nav_bottom .menu {gap:50px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:block;}
+#copyright_sign_iii {display:none;}
+#sep {display:none;}}
+@media screen and (min-width:801px) and (max-width:990px) {
+.nav_bottom .menu {gap:40px;}
+.nav_bottom .menu p {font-size:14px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:block;}
+#sep {display:block;}}
+@media screen and (min-width:1000px) {
+.nav_bottom .menu {gap:50px;}
+.nav_bottom .menu p {font-size:14px;}
+#copyright_sign_i {display:none;}
+#copyright_sign_ii {display:none;}
+#copyright_sign_iii {display:block;}
+#sep {display:block;}}
+#copyright_sign_i, #copyright_sign_ii, #copyright_sign_iii {color:var(--text-color);}
+.nav-top {position: fixed;width: 100%;left: 0;display: flex;justify-content: center;align-items: center;z-index:var(--z-index-max);}
+.nav-top {top:15px;background: none;padding:0;margin:0;}
+.nav-top .menu {display:flex;gap: 30px;padding:0;margin:0;}
+.nav-top .menu a {color:var(--text-color);text-decoration:none;cursor:pointer;}
+.nav-top .menu p {font-family:var(--font-main);color:var(--text-color);font-size:25px;text-transform:uppercase;padding:0;margin:0;}
+@media screen and (max-width:400px) {
+.nav-top .menu {gap:20px;}
+.nav-top .menu a p{font-size:23px;}}
+@media screen and (min-width:401px) and (max-width:500px) {
+.nav-top .menu {gap:40px;}
+.nav-top .menu a p{font-size:23px;}}
+@media screen and (min-width:501px) and (max-width:600px) {
+.nav-top .menu {gap:50px;}
+.nav-top .menu a p{font-size:23px;}}
+@media screen and (min-width:601px) and (max-width:700px) {
+.nav-top .menu {gap:80px;}}
+@media screen and (min-width:701px) and (max-width:800px) {
+.nav-top .menu {gap:80px;}
+.nav-top .menu a p{font-size:23px;}}
+@media screen and (min-width:801px) and (max-width:990px) {
+.nav-top .menu {gap:90px;}
+.nav-top .menu a p{font-size:23px;}}
+@media screen and (min-width:1000px) {
+.nav-top .menu {gap:90px;}
+.nav-top .menu a p{font-size:23px;}}
+.container {position:absolute;left:0;top:50px;width:100%;height:auto;min-height:100%;justify-content:center;align-items:center;display:flex;margin:0 auto;padding:0;z-index:1;padding-bottom:100px;overflow-x:hidden;overflow-y:auto;}
+.container pre {line-height:3;font-family:var(--bold-BBMMPTX-font);text-transform:uppercase;font-size:1rem;word-wrap:break-word;overflow-x:hidden;max-width:100%;text-align:center;color:var(--primary_color);  white-space: pre-wrap;word-wrap: break-word;overflow-wrap: break-word;padding:20px;font-weight:300;font-style:normal;line-height:1.4;}
 
-body {
-    margin: 0;
-    background-color: white; /* set the background color of the body to black */
-    color: white; /* set the default text color to white */
-font-family: 'BBManualMonoProTX', Arial;
-font-weight:300;
-}
-
-.new-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black; /* set the background color of the overlay */
-    z-index: 9999;
-    text-align: center;
-    overflow-y: auto;
-}
-
-.new-overlay-content {
-    margin-top: 30px; /* adjust the top margin */
-    font-size: 18px;
-font-family: 'BBManualMonoProTX', Arial;
-}
-
-.new-overlay-img {
-    position: fixed;
-    bottom: 7%; /* adjust the bottom position */
-    left: 50%;
-    z-index: 100000000;
-    transform: translateX(-50%);
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: auto;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-    -webkit-touch-callout: none;
-    width: 30px; /* Adjust width as needed */
-    height: 30px;
-}
-
-.button-container {
-    position: fixed;
-    top: 55px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-}
-
-.new-btn {
-    background: none; /* remove background color */
-    color: white; /* set text color to white */
-    border: none; /* add border */
-    padding: 10px 10px; /* adjust padding */
-    cursor: pointer;
-    font-size: 15.9px;
-}
-
-.separator {
-    color: white;
-    padding: 0 1px; /* reduce spacing between buttons */
-    font-size: 15.9px;
-}
-
-.fade-bottomm {
-            position: fixed; /* Make the fades fixed */
-            left: 0;
-            right: 0;
-            height: 50px;
-            pointer-events: none; /* Allow clicks to pass through */
-            z-index: 9999; /* Ensure they are above the content */
-            border: none; /* Ensure no border is applied */
-            outline: none; /* Ensure no outline is applied */
-        }
-
-        .black-space-bottomm {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 14%; /* Adjust the height of the black space */
-            background-color: black;
-            z-index: 9999; /* Ensure it's above other content */
-        }
-
-        .fade-bottomm {
-            bottom: 14%; /* Position the down fade immediately above the black space */
-            left: 1%;
-            right: 1%;
-            height: 57px; /* Adjust the height of the fade */
-            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-font-family: 'BBManualMonoProTX', Arial;
-}
-
-td {
-  border: none;
-  width: 50%; /* Ensure both columns have the same width */
-  padding: 1px; /* Adjust this value to control the space inside cells */
-  line-height: 0.90;
-
-font-family: 'BBManualMonoProTX', Arial;
-}
-
-.small-text {
-  font-size: 12px;
-  color: black;
-  text-align: right;
-font-family: 'BBManualMonoProTX', Arial;
-padding-right:4px;
-fill: black;
-      stroke: black;
-      stroke-width: 10px;
-      stroke-opacity: 1;
-}
-
-.regular-text {
-  font-size: 16px;
-  color: black;
-  text-align: left;
-font-family: 'BBManualMonoProTX', Arial;
-padding-left:4px;
-fill: black;
-      stroke: black;
-      stroke-width: 1px;
-      stroke-opacity: 1;
-}
-
-.centered-text {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  font-size: 24px;
-  font-weight: 300;
-font-family: 'BBManualMonoProTX', Arial;
-  color: black;
-
-}
-
-
-tr {
-  display: table-row;
-}
-
-.names-list {
-  font-size: 30px;
-  margin-top: 0;
-  text-align: center;
-font-family: 'BBManualMonoProTX', Arial;
-}
-
+@media screen and (min-width:770px) {.container pre {padding:0 200px;}}
 </style>
-
 </head>
 <body>
+<div class="nav-top">
+<div class="menu">
+<a href="https://khaliiil.com">
+<p>
+HOME
+</p>
+</a>
+<a href="https://tour.khaliiil.com/">
+<p>
+TOUR
+</p>
+</a>
+<a href="https://khaliiil.com/blog">
+<p>
+BLOG
+</p>
+</a>
+<a href="https://khaliiil.com/core">
+<p>
+CORE
+</p>
+</a>
+</div>
+</div>
+</div>
+<div class="nav_bottom">
+<div class="menu">
+<a href="https://connect.khaliiil.com">
+<p>
+JOIN
+</p>
+</a>
+<p id="sep">/</p>
+<a href="https://khaliiil.com/credits">
+<p>
+CREDITS
+</p>
+</a>
+<p id="sep">/</p>
+<p id="copyright_sign_i">&copy;</p>
+<p id="copyright_sign_ii">&copy;&nbsp;2024</p>
+<p id="copyright_sign_iii">&copy;&nbsp;2024,&nbsp;KHALIL</p>
+<p id="sep">/</p>
+<a href="https://khaliiil.com/terms-conditions">
+<p>
+TERMS
+</p>
+</a>
+<p id="sep">/</p>
+<a href="https://khaliiil.com/privacy-policy">
+<p>
+PRIVACY
+</p>
+</a>
+</div>
+</div>
+</div>
+<div class="container">
+<pre>
+All content displayed on the Tour 2024 page is solely credited to me, Khalil. This includes, but is not limited to, all travel itineraries, photography, written descriptions, personal reflections, and the overall web design and layout of this page. Every trip, destination, and story shared has been documented through my own experiences.
 
-<br>
-<table>
-  <tr>
-    <td colspan="2" style="text-decoration:underline;font-size:35px;text-underline-offset:3.5px;" class="centered-text">LIVE SHOW CREDITS</td>
-  </tr>
-    
-    <tr>
-    <td colspan="2" class="centered-text">STAGE DESIGN</td>
-  </tr>
-  <tr>
-    <td class="small-text">STAGE DESIGN</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-  <tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-  <tr>
-    <td class="small-text"></td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td colspan="2" class="centered-text">VIDEO CONTENT</td>
-  </tr>
-  <tr>
-    <td class="small-text">EDITORS</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-  <tr>
-    <td class="small-text"></td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-  <tr>
-    <td class="small-text">SOUND DESIGN</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-  <tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-  <tr>
-    <td class="small-text">SCREEN PRODUCER</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-  <tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td colspan="2" class="centered-text">LIGHTING</td>
-  </tr>
-  <tr>
-    <td class="small-text">LIGHTING DIRECTOR</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-  <tr>
-    <td class="small-text">ADDITIONAL LIGHTING DIRECTOR</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-  <tr>
-    <td class="small-text">LIGHTING PROGRAMMER</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
+As the creator and owner of this content, I have personally crafted each entry, carefully curating and organizing my 2024 travel adventures to provide insight into my journey. From capturing unique moments to detailing the history and culture of each location, my travels have been a personal exploration and a reflection of my passion for seeing the world.
 
+The content here serves as a testament to my dedication to both travel and storytelling, and it is protected under intellectual property rights. Any reproduction, distribution, or use of the material—whether for personal or commercial purposes—without prior written consent from me is strictly prohibited.
 
-<tr>
-    <td colspan="2" class="centered-text">MUSIC</td>
-  </tr>
-<tr>
-    <td class="small-text">EXECUTIVE PRODUCER OF MUSIC</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text">MUSIC DIRECTOR</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">BACKING VOCALS</td>
-    <td class="regular-text">MIRA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">MIRA DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">AHMAD YASSIN</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">EMARN ABU ALHEJA</td>
-  </tr>
+This page is an expression of my creativity and hard work, and I am proud to share my experiences with those who visit. It is important to acknowledge that these experiences and the content presented have been developed from my own perspective, and all credit for its creation belongs solely to me.
 
+For inquiries or permissions regarding the use of my content, please contact me directly. I value and appreciate your respect for the work I have put into sharing these moments with you.
 
-<tr>
-    <td colspan="2" class="centered-text">LIVE SHOW AND FILMING</td>
-  </tr>
-    <tr>
-    <td class="small-text">LIVE SHOW DIRECTOR</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">EMARN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text">LIVE CAMERA DIRECTOR</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">MIRA DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">AHMAD YASSIN</td>
-  </tr>
-<tr>
-    <td class="small-text">LIGHTING DESIGNER</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
+Thank you for visiting my Tour 2024 page. I hope you enjoy exploring my travels as much as I enjoyed embarking on them.
 
-
-    
-  <tr>
-    <td colspan="2" style="text-decoration:underline;text-underline-offset: 3.5px;" class="centered-text">LIVE MUSIC CREDITS</td>
-  </tr>
-    
-    <tr>
-    <td colspan="2" class="centered-text">HOLY GRAIL</td>
-  </tr>
-<tr>
-    <td class="small-text">HEADLINERS</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">PREFORMERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">SINGERS</td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JUSTIN TIMBRLAKE</td>
-  </tr>
-<tr>
-    <td class="small-text">MUSIC BY</td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JUSTIN TIMBRLAKE</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JEROME HARMON</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KURT COBAIN</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">DAVE GROHL</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">THE DREAM</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">TIMBALAND</td>
-  </tr>
-<tr>
-    <td class="small-text">CREW</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">AHMAD YASSIN</td>
-  </tr>
-<tr>
-    <td class="small-text">CHOREOGRAPHERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-
-
-    <tr>
-    <td colspan="2" class="centered-text">CRAZY IN LOVE</td>
-  </tr>
-<tr>
-    <td class="small-text">HEADLINERS</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">PREFORMERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">SINGERS</td>
-    <td class="regular-text">BEYONCÉ KNOWLES-CARTER</td>
-  </tr>
-<tr>
-    <td class="small-text">MUSIC BY</td>
-    <td class="regular-text">BEYONCÉ</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RICH HARRISON</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">EUGENE RECORD</td>
-  </tr>
-<tr>
-    <td class="small-text">CREW</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">AHMAD YASSIN</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">MIRA DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">CHOREOGRAPHERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-    <tr>
-    <td colspan="2" class="centered-text">RUN THIS TOWN</td>
-  </tr>
-<tr>
-    <td class="small-text">SINGERS</td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text">MUSIC BY</td>
-    <td class="regular-text">RIHANNA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KANYE WEST</td>
-  </tr>
-<tr>
-    <td class="small-text">SONGWRITERS</td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RIHANNA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">ERNEST WILSON</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KANYE WEST</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JEFF BHASKER</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">ATHANASIOS ALATAS</td>
-  </tr>
-<tr>
-    <td class="small-text">CREW</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">AHMAD YASSIN</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">MIRA DIAB</td>
-  </tr>
-
-
-
-    <tr>
-    <td colspan="2" class="centered-text">BABY BOY</td>
-  </tr>
-<tr>
-    <td class="small-text">HEADLINERS</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">PREFORMERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">SINGERS</td>
-    <td class="regular-text">BEYONCÉ KNOWLES-CARTER</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">SEAN PAUL</td>
-  </tr>
-<tr>
-    <td class="small-text">MUSIC BY</td>
-    <td class="regular-text">BEYONCÉ KNOWLES-CARTER</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">SCOTT STORCH</td>
-  </tr>
-<tr>
-    <td class="small-text">LYRICISTS</td>
-    <td class="regular-text">BEYONCÉ KNOWLES-CARTER</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">SEAN PAUL</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">ROBERT WALLER</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text">CREW</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">AHMAD YASSIN</td>
-  </tr>
-<tr>
-    <td class="small-text">CHOREOGRAPHERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-
-
-
-
-
-    <tr>
-    <td colspan="2" class="centered-text">COZY</td>
-  </tr>
-<tr>
-    <td class="small-text">HEADLINERS</td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">PREFORMERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-<tr>
-    <td class="small-text">SINGERS</td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JUSTIN TIMBRLAKE</td>
-  </tr>
-<tr>
-    <td class="small-text">MUSIC BY</td>
-    <td class="regular-text">JAY-Z</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JUSTIN TIMBRLAKE</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">JEROME HARMON</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KURT COBAIN</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">DAVE GROHL</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">THE DREAM</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">TIMBALAND</td>
-  </tr>
-<tr>
-    <td class="small-text">CREW</td>
-    <td class="regular-text">OMAYA ARMOSH</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">AHMAD YASSIN</td>
-  </tr>
-<tr>
-    <td class="small-text">CHOREOGRAPHERS</td>
-    <td class="regular-text">RANEEN ABU ALHEJA</td>
-  </tr>
-<tr>
-    <td class="small-text"></td>
-    <td class="regular-text">KHALIL DIAB</td>
-  </tr>
-
-</table><br><br><br><br><br><br><br><br><br><br>
+All rights reserved.
+</pre>
+</div>
 </body>
 </html>
